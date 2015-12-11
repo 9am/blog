@@ -1,0 +1,378 @@
+<style type="text/css">
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .canvas_container {
+        width: 100%;
+        height: 100%;
+        background-color: #fdfff0;
+    }
+    
+    .canvas {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<div class="canvas_container">
+    <canvas id="canvas" class="canvas"></canvas>
+</div>
+<script src="/js/portfolio/graph.js"></script>
+<script>
+    // CD251C
+    // 2387CD
+    // 5925FF
+    var graphData = {
+        "v_g": [
+            {
+                "label": "CENTER",
+                "size": "30",
+                "color": "#000000"
+            },
+            {
+                "label": "A",
+                "size": "30",
+                "color": "#FF0000"
+            },
+            {
+                "label": "B",
+                "size": "30",
+                "color": "#FF0000",
+                "shape": "rect"
+            },
+            {
+                "label": "C",
+                "size": "30",
+                "color": "#FF0000"
+            },
+            {
+                "label": "D",
+                "size": "30",
+                "color": "#FF0000"
+            },
+            {
+                "label": "E",
+                "size": "30",
+                "color": "#FF0000"
+            },
+            {
+                "label": "F",
+                "size": "30",
+                "color": "#FF0000"
+            },
+            {
+                "label": "G",
+                "size": "30",
+                "color": "#FF0000"
+            },
+            {
+                "label": "H",
+                "size": "30",
+                "color": "#FF0000"
+            },
+            {
+                "label": "I",
+                "size": "30",
+                "color": "#FF0000"
+            },
+            {
+                "label": "J",
+                "size": "30",
+                "color": "#FF0000"
+            },
+
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+            {
+                "size": "25",
+                "color": "#25A96A"
+            },
+
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+            {
+                "size": "25",
+                "color": "#2387CD",
+                "shape": "rect"
+            },
+
+            {
+                "size": "20",
+                "color": "#FFB11B",
+                "shape": "rect"
+            },
+            {
+                "size": "20",
+                "color": "#FFB11B",
+                "shape": "rect"
+            },
+            {
+                "size": "20",
+                "color": "#FFB11B",
+                "shape": "rect"
+            },
+            {
+                "size": "20",
+                "color": "#FFB11B",
+                "shape": "rect"
+            },
+            {
+                "size": "20",
+                "color": "#FFB11B",
+                "shape": "rect"
+            },
+
+            {
+                "size": "30",
+                "color": "#FFB11B"
+            },
+            {
+                "size": "30",
+                "color": "#FFB11B"
+            },
+            {
+                "size": "30",
+                "color": "#FFB11B"
+            },
+            {
+                "size": "30",
+                "color": "#FFB11B"
+            },
+            {
+                "size": "30",
+                "color": "#FFB11B"
+            },
+            {
+                "size": "30",
+                "color": "#FFB11B"
+            },
+            {
+                "size": "30",
+                "color": "#FFB11B"
+            },
+
+            {
+                "label": "relation",
+                "size": "35",
+                "color": "#FF0000",
+                "shape": "circle_in"
+            }
+        ],
+        "e_g": [
+            [0, 1],
+            [0, 2],
+            [0, 3],
+            [0, 4],
+            [0, 5],
+            [0, 6],
+            [0, 7],
+            [0, 8],
+            [0, 9],
+            [0, 10],
+            [1, 11],
+            [1, 12],
+            [1, 13],
+            [1, 14],
+            [1, 15],
+            [1, 16],
+            [1, 17],
+            [1, 18],
+            [1, 19],
+            [1, 20],
+            [1, 21],
+            [1, 22],
+            [1, 23],
+            [1, 24],
+            [1, 25],
+            [1, 26],
+            [1, 27],
+            [1, 28],
+            [1, 29],
+            [1, 30],
+            [4, 31],
+            [4, 32],
+            [4, 33],
+            [4, 34],
+            [4, 35],
+            [4, 36],
+            [4, 37],
+            [4, 38],
+            [4, 39],
+            [4, 40],
+            [4, 41],
+            [4, 42],
+            [4, 43],
+            [4, 44],
+            [4, 45],
+            [32, 46],
+            [32, 47],
+            [32, 48],
+            [32, 49],
+            [32, 50],
+            [2, 51],
+            [2, 52],
+            [2, 53],
+            [2, 54],
+            [2, 55],
+            [2, 56],
+            [2, 57],
+            [1, 58],
+            [32, 58]
+        ]
+    };
+
+    var handler = setInterval(function () {
+        if ($) {
+            GRAPH.init(graphData, "canvas");
+            clearInterval(handler);
+        }
+    }, 200);
+</script>
